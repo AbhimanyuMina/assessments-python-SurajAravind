@@ -34,13 +34,13 @@ All these words start with b, except for “carrot”.
 def prefix_words(prefix, words):
     output = []
     for word in words:
-       flag = True
-       for i in range(len(prefix)):
-          if word[i] != prefix[i]:
-              flag = False
-       if (flag == True):
-           output.append(word)    
-    return output    
+        flag = True
+         for i in range(len(prefix)):
+            if word[i] != prefix[i]:
+               flag = False
+         if (flag == True):
+            output.append(word)
+     return output    
 
 class TestPrefixWords(unittest.TestCase):
 
